@@ -246,11 +246,24 @@ h2 {
   margin-bottom: 30px;
 }
 
+h3 {
+  color: #6d28d9;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.paragraphCursos {
+  font-size: 18px;
+  color: #5D1F8E;
+  margin-bottom: 5px;
+}
+
 .contentCursos {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
   margin-top: 20px;
 }
 
@@ -283,7 +296,7 @@ h2 {
 }
 
 .cursosButton:hover {
-  background-color: transparent;
+  background-color: #6c28d99f;;
   color: white;
 }
 
@@ -505,18 +518,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    gap: 30px;
     margin-top: 30px;
   }
   
   .imgDiv {
     position: relative;
     max-width: 500px;
-  }
-  
-  .cursosButton:hover {
-    background-color: transparent;
-    color: white;
   }
 }
 
