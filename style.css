@@ -6,6 +6,7 @@
 html {
   overflow-y: scroll;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 nav {
   background-color: transparent;
@@ -13,7 +14,7 @@ nav {
   width: 100%;
   position: fixed;
   z-index: 1;
-  transition: 1.5s ease-out
+  transition: 1.5s ease-out;
 }
 nav.scroll{
   background-color: #6c28d9a4;
@@ -233,39 +234,56 @@ h2{
   font-size: 40px;
   color: #6d28d9;
 }
-.contentCursos{
+
+.containerCursos {
+  margin: 10px auto;
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  color: #6d28d9;
+  margin-bottom: 30px;
+}
+
+.contentCursos {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  margin-top: 30px;
   gap: 20px;
+  margin-top: 20px;
 }
-.imgDiv{
-  max-width: 333px;
+
+.imgDiv {
+  position: relative;
 }
-.cursosImg{
-  width: 100%;
+
+.cursosImg {
+  width: 333px;
   height: 300px;
   box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.8);
 }
 
-.cursosBtnDiv{
+.cursosBtnDiv {
   text-align: center;
-  margin: 20px 0;
 }
-.cursosButton{
-  background-color: transparent;
+
+.cursosButton {
+  background-color: #6d28d9;
   border: 2px solid #6d28d9;
   font-weight: bold;
-  color: black;
+  color: white;
   font-size: 18px;
-  font-weight: bold;
   text-align: center;
   cursor: pointer;
   padding: 10px 50px;
   transition: all 0.6s;
+  position: absolute;
+  transform: translate(-50%, -120%);
 }
+
 .cursosButton:hover {
-  background-color: #6d28d9;
+  background-color: transparent;
   color: white;
 }
 
@@ -458,10 +476,10 @@ footer {
     margin-top: 30px;
     gap: 10px;
   }
-
-  .cursosButton{
-    font-size: 15px;
-    padding: 10px 30px;
+  .cursosImg {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.8);
   }
 }
 
@@ -475,7 +493,33 @@ footer {
     width: 500px;
     height: 100%;
   }
+  
+  h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #6d28d9;
+    margin-bottom: 30px;
+  }
+  
+  .contentCursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .imgDiv {
+    position: relative;
+    max-width: 500px;
+  }
+  
+  .cursosButton:hover {
+    background-color: transparent;
+    color: white;
+  }
 }
+
 @media (max-width: 520px) {
   .sectionSlider {
     width: 350px;
