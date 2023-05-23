@@ -89,3 +89,33 @@ setInterval(function() {
   document.getElementById("image" + counter).checked = true;
   handleRadioChange.call({ value: counter });
 }, 5000);
+
+document.addEventListener("DOMContentLoaded", function() {
+  var menuLinks = document.querySelectorAll('.nav-list li a');
+
+  menuLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      var targetId = this.getAttribute('href');
+      var targetElement = document.querySelector(targetId);
+      var targetOffset = targetElement.offsetTop - 100; // Ajuste o valor dos pixels aqui
+
+      if (targetId === '#') {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      } else {
+        window.scrollTo({
+          top: targetOffset,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});
+
+
+
+
