@@ -227,6 +227,7 @@ li{
   max-width: 1000px;
   margin: 10px auto;
 }
+
 h2{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 40px;
@@ -405,6 +406,64 @@ footer {
   gap: 150px;
 }
 
+@media (max-width: 650px) {
+  .content{
+    margin: 0 50px;
+  }
+  
+  .title{
+    font-size: 35px;
+    width: 300px;
+  }
+  .paragraph{
+    width: 300px;
+  }
+  .button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+  .button:hover{
+    background-color: #6c28d9a4;
+  }
+}
+
+@media (max-width: 1024px) {
+  .infoCem {
+    margin: 30px 50px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .infoTitle{
+    font-size: 35px;
+  }
+  .imgInfo {
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .containerCursos{
+    max-width: 600px;
+    margin: 10px auto;
+  }
+  h2{
+    font-size: 35px;
+  }
+  .contentCursos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+  }
+
+  .cursosButton{
+    font-size: 15px;
+    padding: 10px 30px;
+  }
+}
 
 
 @media (max-width: 700px) {
